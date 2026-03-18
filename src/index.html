@@ -1,3 +1,13 @@
+<!-- 
+ File: index.html
+ Author: Szász Benedek
+ Copyright: 2026, Szász Benedek
+ Group: Szoft I N
+ Date: 2026-03-18
+ Github: https://github.com/BenedekSzasz/
+ Licenc: MIT
+ -->
+
 <!DOCTYPE html>
 <html lang="HU">
 <head>
@@ -8,17 +18,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
   <div class="container">
     <h1>Rombusz Területe és Kerülete</h1>
-    <form >
+    <form id="rhombusForm"> 
       <div class="input">
-        <label for="" class="form-label"></label>
-        <input type="text" class="form-control" id="">
+        <label for="side" class="form-label">Oldal</label>
+        <input type="text" class="form-control" id="side">
+      </div>
+
+      <div class="input">
+        <label for="alpha-angle" class="form-label">Alfa szög</label>
+        <input type="text" class="form-control" id="alpha-angle">
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-2">Kiszámít</button>
+
+
+      <div class="input">
+        <label for="perimeter" class="form-label">Kerület</label>
+        <input type="text" class="form-control" id="perimeter">
+      </div>
+
+      <div class="input">
+        <label for="area" class="form-label">Terület</label>
+        <input type="text" class="form-control" id="area">
       </div>
     </form>
   </div>
   <script src="bootstrap.js"></script>
-  <script src="app.js"></script>  
+  <script type = "module" src="app.js"></script>  
 </body>
 </html>
